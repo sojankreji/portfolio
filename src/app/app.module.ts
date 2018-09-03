@@ -2,17 +2,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { DetailsComponent } from './details/details.component';
+
 import { AppRoutingModule } from './/app-routing.module';
-import { NextComponent } from './next/next.component';
+import { HeadderComponent } from './headder/headder.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ContentComponent } from './content/content.component';
+import { HomeComponent } from './home/home.component';
+import { StoreComponent } from './store/store.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    DetailsComponent,
-    NextComponent
+    HeadderComponent,
+    NavbarComponent,
+    ContentComponent,
+    HomeComponent,
+    StoreComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,

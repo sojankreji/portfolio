@@ -1,3 +1,130 @@
-.card{
-    background: #CCFF;
+
+@charset "utf-8";
+@font-face {
+	font-family: "header-font";
+	src:url("/src/assets/fonts/Aldrich-Regular.ttf");
 }
+/* CSS Document */
+.WElogo {
+    width: 104px;
+    margin-left: 24px;
+    margin-top: 5px;
+    height: 88px;
+    transition: width 2s, height 2s, transform 1s;
+}
+.WElogo:hover {
+    /* width: 208px;
+    height: 176px; */
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(40deg);
+}
+.inline
+{
+	display: inline-block;
+}
+.bg-image
+{ 
+ background: url(/src/assets/Images/signature.png);
+	width: 100%;
+	height: auto;
+}
+.header-col {
+	width:23%;
+}
+.header-row {
+	height:97px !important;
+}
+.header-buttons-container {
+	width:184px;
+	float:right;
+    display:inline;
+    margin-top: 51px;
+    float: right;
+    margin-left: 3%;
+}
+.header-col-1 {
+    width: 54%;
+	display:inline;
+}
+.header-button{
+    color: #525252;
+    font-family: fantasy;
+    background-color: #ffffff;
+    border-color: #B83334;
+    border: 2px solid #B83334;
+}
+.login-button {
+    padding: 0px 16px 0px 16px;
+}
+.signup-button {
+	padding: 0px 13px 0px 13px;	
+}
+.header-button:hover {
+	color:#B93437;
+	border-color:#525252;
+	background-color:#525252;
+}
+.menu-bar {
+	background-color:black;
+	    height: 34px;
+	    width: 101%;
+
+}
+.menu-item {
+	color: white;
+	min-width: max-content;
+    padding: 4px 5% 0 5%;
+    font-famiy: verdana;
+    border: 1px solid #BA3435;
+    border-width: 0 1px 0 0;
+}
+.carousel-inner img {
+       height: 448px !important;
+    width: 759px;
+    margin-left: 20%;
+
+}
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    background-color: #c7c0c0;
+    top: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 5%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.2;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+	padding: 17px;
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    background-size: 100% 100%;
+}
+
+.carousel-indicators .active{
+	background-color : #ffc107 !important;
+}
+.indicator{
+	background-color : #A00C0C !important;
+}
+.header-button {
+	font-family: header-font;
+}
+.menu-item:hover{
+	text-decoration:none;
+	background:white;
+	color:#BA3435;
+	border: 2px solid black;
+	margin-top:-2px;
+}
+
+
+
