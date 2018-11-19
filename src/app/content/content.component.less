@@ -1,0 +1,260 @@
+.content {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.floating-container {
+    width: 30px;
+    position: fixed; // background-color: #E19436;
+    height: 200px;
+    z-index: 0;
+    .first-fl-btn {
+        border-radius: 0 18px 0 0;
+    }
+    .last-fl-btn {
+        border-radius: 0 0 0 18px;
+    }
+    .fa-graduation-cap {
+        margin-left: -3px !important;
+    }
+    .floating-wrapper {
+        position:relative;
+    }
+    .floating-btn {
+        background: #e0902d;
+        border: none;
+        height: 54px;
+        width: 55px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        transition: all .5s;
+        &:hover {
+            transform: scale(1.2, 1.2);
+            background: none;
+            .fa {
+                color: #e0902d !important;
+                transform: rotate(50deg);
+            }
+        }
+        .fl-icon {
+            margin-left: 7px;
+            margin-right: 7px;
+            .fa {
+                font-size: 26px;
+                color: white;
+                transition: all .5s;
+            }
+        }
+    }
+}
+.dummy-container2{
+    height:0px;
+    width:0px;
+    overflow:hidden;
+}
+::ng-deep.ui-tooltip {
+    width: max-content;
+    position: absolute;
+    padding: 2px 15px 2px 15px;
+    margin-left: 15px;
+    background: white;
+    color: #e0902d;
+    border: 2px solid #e0902d;
+}
+::ng-deep.ui-tooltip-right {
+    display:inline !important;
+}
+::ng-deep.ui-tooltip-arrow {
+    content:"\f0d9";
+    color:rgb(255, 255, 255);
+    font-size:20px;
+}
+
+.banner {
+    img {
+        height: unset !important;
+        margin-left: 0px !important;
+    }
+}
+
+.banner {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.card-button {
+    border-style: none;
+    width: unset;
+    width: 30%;
+    background-color: rgba(1, 1, 1, 0);
+}
+
+.card {
+    display: inline-grid;
+    text-align: -webkit-center;
+    vertical-align: -webkit-baseline-middle;
+    min-width: 160px;
+    width: 100%;
+    padding: 5px;
+    margin: 7px 1.2%;
+    background: rgba(14, 20, 23, 0.4);
+    transition: all 500ms linear;
+}
+
+.card:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.title {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    font-family: Ubuntu;
+    font-weight: 100;
+}
+
+.icon {
+    font-size: 3em;
+    text-align: center;
+    color: #e0902d;
+}
+
+.desc {
+    color: white;
+    text-align: -webkit-center;
+    margin: 0 9px;
+    font-size: 14px;
+}
+
+.card-container {
+    margin-top: 10px;
+}
+
+::ng-deep.ui-widget-overlay {
+    height: 100% !important;
+    width: 100% !important;
+    top: 0px !important;
+    position: fixed !important;
+    opacity: .8 !important;
+    background: rgb(16, 16, 16) !important;
+}
+
+::ng-deep.ui-dialog {
+    position: absolute !important;
+    box-shadow: 0 7px 50px 0 rgba(0, 0, 0, .35);
+    border-radius: 3px;
+    &.ui-widget {
+        .ui-dialog-titlebar {
+            padding: 3px;
+            border-radius: 3px 3px 0 0;
+            background: #E0902D;
+            color: #fff !important;
+            .ui-dialog-title {
+                margin-left: .5em;
+            }
+            ::ng-deep.ui-dialog-titlebar-close {
+                display: block !important;
+                color: #fff; // &:hover {
+                //     background: rgb(16, 107, 187);
+                // }
+            }
+        }
+        ::ng-deep.ui-dialog-content {
+            text-align: -webkit-center;
+            max-height: 600px;
+        }
+        .ui-dialog-footer {
+            border-radius: 0 0 3px 3px !important;
+        }
+    }
+}
+
+::ng-deep.ui-dialog-titlebar-icon {
+    width: 10px;
+    height: 10px;
+    float: right;
+    margin-right: 5px;
+    border-radius: 100%;
+    margin-top: 7px;
+}
+
+::ng-deep.ui-dialog-titlebar-close {
+    border-radius: 100px;
+    background-color: red;
+}
+
+::ng-deep.floatingPopup {
+    .ui-dialog-titlebar {
+        padding: 3px;
+        border-radius: 3px 3px 0 0;
+        background: #436176 !important;
+        color: #fff !important;
+        .ui-dialog-title {
+            margin-left: .5em;
+        }
+        ::ng-deep.ui-dialog-titlebar-close {
+            display: block !important;
+            color: #fff; // &:hover {
+            //     background: rgb(16, 107, 187);
+            // }
+        }
+    }
+}
+::ng-deep .ui-dialog-titlebar-maximize {
+    background-color: #1d70b7;
+}
+
+.ui-widget-content {
+    border: 0;
+}
+
+.ui-corner-top {
+    border-radius: 0;
+}
+
+.ui-dialog-footer {
+    padding: 0.5em;
+}
+
+.works {
+    text-align: center;
+    vertical-align: center;
+    min-width: 450px;
+    max-width: 1200px;
+    max-height: 539px;
+    min-height: 350px;
+    padding: 10px;
+}
+.f-menu-item {
+    padding: 10px;    
+    max-width: 1200px;
+    max-height: 539px;
+    text-align: center;
+    vertical-align: center;
+}
+.f-menu-item-resume {
+    max-height: unset !important;
+    max-width: 80% !important;
+}
+
+.works-tile {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media all and (max-width: 700px) and (min-width:100px) {
+    .banner {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media all and (max-width: 530px) and (min-width:100px) {
+    .desc {
+        font-size: 11px;
+    }
+    .icon {
+        font-size: 2em;
+    }
+}

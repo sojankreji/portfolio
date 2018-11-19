@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-
+import { DialogModule } from 'primeng/dialog';
 import { AppComponent } from './app.component';
-
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppRoutingModule } from './/app-routing.module';
 import { HeadderComponent } from './headder/headder.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -10,6 +11,9 @@ import { ContentComponent } from './content/content.component';
 import { HomeComponent } from './home/home.component';
 import { StoreComponent } from './store/store.component';
 import { ProductComponent } from './product/product.component';
+import { FooterComponent } from './footer/footer.component';
+import { SlideMenuModule } from 'primeng/slidemenu';
+import { TooltipModule } from 'primeng/tooltip';
 
 @NgModule({
   declarations: [
@@ -20,10 +24,16 @@ import { ProductComponent } from './product/product.component';
     HomeComponent,
     StoreComponent,
     ProductComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    DialogModule,
+    AngularFontAwesomeModule,
+    SlideMenuModule,
+    TooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
