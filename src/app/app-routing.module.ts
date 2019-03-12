@@ -3,23 +3,24 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContentComponent } from './content/content.component';
 import { StoreComponent } from './store/store.component';
+import { LoadingComponent } from './loading/loading.component';
 import { ProductComponent } from './product/product.component';
+import { WrapengineComponent } from './wrapengine/wrapengine.component';
 
 
 const routes: Routes = [
   {
-    path: '', component: ContentComponent, children: [
-      { path: '', component: HomeComponent },
-      { path: 'store', component: StoreComponent },
-      { path: 'store/:id', component: ProductComponent },
-    ]
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+   path: 'wrapengine',
+   component: WrapengineComponent
   }
-
-  // { path: 'd', component:   }
-
-
-
-
 ];
 
 

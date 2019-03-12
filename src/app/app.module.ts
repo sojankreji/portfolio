@@ -1,5 +1,4 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { DialogModule } from 'primeng/dialog';
 import { AppComponent } from './app.component';
@@ -14,6 +13,9 @@ import { ProductComponent } from './product/product.component';
 import { FooterComponent } from './footer/footer.component';
 import { SlideMenuModule } from 'primeng/slidemenu';
 import { TooltipModule } from 'primeng/tooltip';
+import { LoadingComponent } from './loading/loading.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { WrapengineComponent } from './wrapengine/wrapengine.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { TooltipModule } from 'primeng/tooltip';
     StoreComponent,
     ProductComponent,
     FooterComponent,
+    LoadingComponent,
+    WrapengineComponent,
   ],
   imports: [
     BrowserModule,

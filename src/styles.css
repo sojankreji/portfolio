@@ -1,8 +1,11 @@
 body {
-    background: url('src/assets/images/bodybg.jpg')
+    /* background: url('src/assets/images/bg2.jpg'); */
     /* background-color: #282735; */
+    /* background-size: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.header {
+/* .header {
     height: 102px;
     background: white;
     min-width: 321px !important
@@ -17,4 +20,4 @@ button:focus {
     .header{
         height: 62px;
     }
-}
+} */
