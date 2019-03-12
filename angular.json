@@ -77,8 +77,8 @@
             "scripts": [],
             "assets": [
               "src/icon.ico",
-              "src/assets",
-              "src/assets/images"
+              "portfolio/src/assets",
+              "portfolio/src/assets/images"
             ]
           }
         },
