@@ -20,7 +20,7 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "portfolio/icon.ico",
-              "portfolio/assets/images"
+              "portfolio/assets"
             ],
             "styles": [
               "src/styles.css"
@@ -77,7 +77,7 @@
             "scripts": [],
             "assets": [
               "src/icon.ico",
-              "src/assets/images"
+              "src/assets"
             ]
           }
         },
